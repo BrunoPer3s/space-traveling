@@ -1,1 +1,66 @@
-// TODO
+
+
+.Container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6.5rem 1.125rem; 
+
+  h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    color: var(--pink-text);
+    margin-bottom: 1.25rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+
+      &+span {
+        margin-left: 1rem;
+      }
+
+      svg {
+        margin-right: 0.4rem;
+        color: var(--pink-text);
+      }
+    }
+  }
+}
+
+.Banner {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.PostContent {
+  div+div {
+    margin-top: 5rem;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    color: var(--title);
+    font-weight: 900;
+    line-height: 140%;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: var(--subtitle);
+    line-height: 140%;
+
+    &+p {
+      margin-top: 1rem;
+    }
+  }
+}
